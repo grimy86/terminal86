@@ -1,0 +1,130 @@
+.terminal {
+    background-color: black;
+    width: 75%;
+    /*adjustable*/
+    height: 100%;
+    /*adjustable*/
+    /*float: none;*/
+    overflow: hidden;
+    /*hides text out of bounds*/
+    border: 2px solid darkslategrey;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: lighter;
+    color: white;
+}
+
+.terminal-header {
+    background-color: darkslategrey;
+    display: flex;
+    /*display title & buttons next to eachother*/
+    justify-content: space-between;
+    /*space title & buttons apart*/
+    padding: 5px;
+}
+
+.title {
+    color: white;
+    margin-left: 20px;
+    /*keep same spacing as .terminal-body*/
+}
+
+.buttons {
+    margin-right: 10px;
+    /*right spacing for ALL buttons*/
+}
+
+.buttons span {
+    background-color: lightgray;
+    border-radius: 100%;
+    /* circle */
+    display: inline-flex;
+    /*display .buttons side by side*/
+    margin-left: 0;
+    /*left spacing for EACH button*/
+    height: 12px;
+    width: 12px;
+}
+
+.terminal-body {
+    padding: 20px;
+    /*spacing between text and terminal body itself*/
+}
+
+.terminal-body span {
+    /*terminal commands*/
+    color: greenyellow;
+    font-size: 20px;
+}
+
+.terminal-body ul {
+    /*list items*/
+    color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.terminal-body li {
+    /*list items*/
+    padding-left: 10px;
+    /*little space between ul and li*/
+    text-wrap: wrap;
+    display: flex;
+}
+
+.terminal-body li::before {
+    /*custom list type*/
+    content: "|__";
+    color: greenyellow;
+    padding: 0;
+    padding-right: 5px;
+    /*little space between li::before and li*/
+}
+
+.terminal-input {
+    width: 50%;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
+
+.terminal-input span {
+    color: greenyellow;
+    font-size: 18px;
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.terminal-input textarea {
+    background-color: black;
+    border-color: black;
+    color: white;
+    caret-color: greenyellow;
+    outline: none;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    text-wrap: nowrap;
+    overflow: hidden;
+    resize: none;
+    height: 20px;
+    caret: yellow block;
+    caret-shape: block !important;
+}
+
+.terminal-input textarea::selection{
+    user-select: none !important;
+    /* standard */
+    -webkit-user-select: none !important;
+    /* Safari, Chrome */
+    -moz-user-select: none !important;
+    /* Firefox */
+    -ms-user-select: none !important;
+    /* Internet Explorer/Edge */
+}

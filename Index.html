@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>terminal86</title>
+  <link rel="icon" href="/style/javascript.ico" type="ico">
+  <link rel="stylesheet" href="/style/terminal.css" />
+</head>
+
+<body>
+  <div class="terminal">
+    <div class="terminal-header">
+      <span class="title">root@grimy86:~#</span>
+      <div class="buttons">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="terminal-body">
+      <pre><p style="padding: 0; margin: 0;">               _                 ____  _____
+   ____ ______(_)___ ___  __  __( __ )/ ___/
+  / __ `/ ___/ / __ `__ \/ / / / __  / __ \ 
+ / /_/ / /  / / / / / / / /_/ / /_/ / /_/ / 
+ \__, /_/  /_/_/ /_/ /_/\__, /\____/\____/  
+/____/                 /____/</p></pre>
+
+      <span id="terminal-title">LIST_OF_COMMANDS</span>
+      <ul id="terminal-list">
+        <li>whoami</li>
+        <li>languages</li>
+        <li>frameworks</li>
+        <li>databases</li>
+      </ul>
+      <p class="terminal-info">Welcome to the root console! <br> Type any of the commands above into this terminal.
+        <br> E.g.: Type "languages" to get an overview of my programming languages.
+      </p>
+      <div class="terminal-input">
+        <span>root@grimy86:~#</span>
+        <textarea id="terminal-input" autofocus="terminal-input" aria-multiline="false"
+        autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <script src="/scripts/contents.js"></script>
+  <script src="/scripts/utils.js"></script>
+  <script src="/scripts/main.js"></script>
+</body>
+
+</html>
