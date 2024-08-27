@@ -37,7 +37,3 @@ const dev = {
     frameworks: programmingFrameworks,
     databases: programmingDatabases
 }
-const terminalBody = document.getElementsByClassName('terminal-body');
-const terminalTitle = document.getElementById('terminal-title');
-const terminalList = document.getElementById('terminal-list');
-const terminalInput = document.getElementById('terminal-input');
